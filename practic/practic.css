@@ -1,0 +1,37 @@
+/* здесь будут выполняться всякие практические приемы из констпекта */
+
+/* ----------  RESET  ---------- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* ----------  END RESET  ---------- */
+label {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-bottom: 10px;
+  border-color: blue;
+}
+.form-title {
+  padding-bottom: 5px;
+}
+textarea {
+  resize: none;
+}

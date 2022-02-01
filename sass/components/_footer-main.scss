@@ -1,0 +1,15 @@
+.footer {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: calc(60px - 26.6px);
+  background-color: #2f303a;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.footer__main {
+  display: flex;
+}

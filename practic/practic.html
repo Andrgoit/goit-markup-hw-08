@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практические задания</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./practic.css" />
+  </head>
+  <body>
+    <!-- здесь будут выполняться всякие практические приемы из констпекта -->
+
+    <!-- формы -->
+    <form class="form" name="signup_form" autocomplete="on" novalidate>
+      <label>
+        <span class="form-title"> Имя</span>
+        <input type="name" name="name" placeholder="Введите Ваше имя" autofocus />
+      </label>
+
+      <label>
+        <span class="form-title">Телефон</span>
+        <input type="tel" name="phone" placeholder="Введите свой номер телефона" />
+      </label>
+
+      <label>
+        <span class="form-title">Почта</span>
+        <input type="email" name="mail" placeholder="Введите адрес почты" />
+      </label>
+
+      <label>
+        <span class="form-title">Комментарий</span>
+        <textarea
+          type="feedback"
+          rows="5"
+          cols="100%"
+          name="feedback"
+          placeholder="Оставьте свой комментарий"
+        ></textarea>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

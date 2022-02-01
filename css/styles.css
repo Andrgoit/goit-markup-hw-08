@@ -1,0 +1,82 @@
+/* ----------  RESET  ---------- */
+
+/* ----------  END RESET  ---------- */
+
+/* ----------  GENERAL SETTINGS  ---------- */
+
+/* ----------  END GENERAL SETTINGS ---------- */
+/* ----------  PAGE HEADER  ---------- */
+
+/* ----------  LOGO  ---------- */
+
+/* ----------  NAVIGATION  ---------- */
+
+/* ---------- CONTACT  ---------- */
+
+/* ----------  HERO  ---------- */
+
+/* ----------  FEATURE  ---------- */
+
+/* Второй вариант вставки иконок
+
+.feature-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-position: center;
+}
+
+.feature-item:nth-child(1)::before {
+  background-image: url('../images/antenna.svg');
+  background-repeat: no-repeat;
+}
+
+.feature-item:nth-child(2)::before {
+  background-image: url('../images/clock.svg');
+  background-repeat: no-repeat;
+}
+
+.feature-item:nth-child(3)::before {
+  background-image: url('../images/diagram.svg');
+  background-repeat: no-repeat;
+}
+
+.feature-item:nth-child(4)::before {
+  background-image: url('../images/astronaut.svg');
+  background-repeat: no-repeat;
+} */
+
+/* ----------  WORK  ---------- */
+
+/* ----------  TEAM  ---------- */
+
+/* ----------  CLIENTS  ---------- */
+
+/* ----------  FOOTER  ---------- */
+
+/* ----------  JOIN  ---------- */
+
+/* ----------  subscribe  ---------- */
+
+/* ----------  design footer  ---------- */
+
+/* ----------     PORTFOLIO.HTML    ---------- */
+
+/* ПОРТФОЛИО */
+
+/* ----------  FILTER BUTTON  ---------- */
+
+/* ----------  PROJECTS  ---------- */
+
+/* ----------  BACKDROP  ----------- */
+
+/* ----------  MODAL WINDOW  ---------- */
+
+/* ----------  FORM  ---------- */
+
+/* ---------- MODAL BUTTONS  ---------- */
+
+/* --------==  (( THE END ))  ==-------- */
