@@ -1,5 +1,7 @@
 .join {
   display: block;
+  text-align: center;
+  margin-bottom: 60px;
 
   &__title {
     font-weight: 700;
@@ -13,6 +15,7 @@
 
   &__list {
     display: flex;
+    justify-content: center;
   }
 
   &__item + &__item {
@@ -38,5 +41,11 @@
 
   &__icon {
     fill: var(--primary-white-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    text-align: left;
   }
 }

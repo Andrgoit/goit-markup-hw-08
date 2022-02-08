@@ -10,6 +10,25 @@
   letter-spacing: 0.03em;
 }
 
-.footer__main {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .footer__main {
+    display: block;
+  }
+
+  .footer__tablet {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__main {
+    display: flex;
+  }
+  .footer__tablet {
+    justify-content: center;
+    padding: 0;
+  }
 }
