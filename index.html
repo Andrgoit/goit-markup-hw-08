@@ -25,14 +25,14 @@
   </head>
   <body>
     <!--------------------------------------------------- page header -->
-    <!-- <header class="header">
-      <div class="container header-container"> -->
-    <!------------------------------------------------Logo-->
-    <!-- <a class="logo no-link" href="./index.html"
+    <header class="header">
+      <div class="container header-container">
+        <!------------------------------------------------Logo-->
+        <a class="logo no-link" href="./index.html"
           ><span class="logo__first-part">Web</span>Studio</a
-        > -->
-    <!--------------------------------------------navigation-->
-    <!-- <nav>
+        >
+        <!--------------------------------------------navigation-->
+        <nav>
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a class="site-nav__link site-nav--current no-link" href="#">Студия</a>
@@ -42,9 +42,9 @@
             </li>
             <li class="site-nav__item"><a class="site-nav__link no-link" href="">Контакты</a></li>
           </ul>
-        </nav> -->
-    <!----------------------------------------------------contact-->
-    <!-- <div class="header-contact">
+        </nav>
+        <!----------------------------------------------------contact-->
+        <div class="header-contact">
           <ul class="header-contact__list list">
             <li class="header-contact__item">
               <a class="header-contact__link no-link" href="mailto:info@devstudio.com">
@@ -64,16 +64,73 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="header__mob-menu-btn-open" data-menu-open>
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-- ----------------------------------------------mob-menu -->
+      <div class="mob-menu" data-menu>
+        <div class="mob-menu__container">
+          <button type="button" class="mob-menu__btn-close" data-menu-close>
+            <svg width="40px" height="40px">
+              <use href="./images/icons.svg#icon-close-mobmenu"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu_list list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link mob-menu--current no-link" href="#">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link no-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-menu__item"><a class="mob-menu__link no-link" href="">Контакты</a></li>
+          </ul>
+          <div class="mob-menu-contact__bottom">
+            <div class="mob-menu-contact">
+              <ul class="mob-menu-contact__list list">
+                <li class="mob-menu-contact__item">
+                  <a class="mob-menu-contact__link no-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="mob-menu-contact__item">
+                  <a class="mob-menu-contact__link no-link" href="tel:+380961111111"
+                    >+38096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu-social">
+              <ul class="mob-menu-social__list list">
+                <li class="mob-menu-social__item">
+                  <a href="" class="mob-menu-social__link no-link">Instagram</a>
+                </li>
+                <li class="mob-menu-social__item">
+                  <a href="" class="mob-menu-social__link no-link">Twitter</a>
+                </li>
+                <li class="mob-menu-social__item">
+                  <a href="" class="mob-menu-social__link no-link">Facebook</a>
+                </li>
+                <li class="mob-menu-social__item">
+                  <a href="" class="mob-menu-social__link no-link">Linkedin</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <!-------------------------------------------------- Hero -->
-      <!-- <section class="hero hero__background">
+      <section class="hero hero__background">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button data-modal-open type="button" class="hero__button">Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
       <!---------------------------------------------------Feature-->
       <section class="feature section">
         <div class="container">
@@ -133,7 +190,12 @@
           <ul class="work__list list">
             <li class="work__item">
               <div class="work__image">
-                <img src="./images/box1-min.jpg" width="370" alt="Компьютер на столе" />
+                <img
+                  srcset="./images/work/work1_pc@1x.jpg 1x, ./images/work/work1_pc@2x.jpg 2x"
+                  src="./images/work/work1_pc@1x.jpg"
+                  width="370"
+                  alt="Компьютер на столе"
+                />
                 <div class="work__overlay">
                   <p class="work__text">Десктопные приложения</p>
                 </div>
@@ -141,7 +203,12 @@
             </li>
             <li class="work__item">
               <div class="work__image">
-                <img src="./images/box2-min.jpg" width="370" alt="Мобильное приложение" />
+                <img
+                  srcset="./images/work/work2_pc@1x.jpg 1x, ./images/work/work2_pc@2x.jpg 2x"
+                  src="./images/work/work2_pc@1x.jpg"
+                  width="370"
+                  alt="Мобильное приложение"
+                />
                 <div class="work__overlay">
                   <p class="work__text">Мобильные приложения</p>
                 </div>
@@ -149,7 +216,12 @@
             </li>
             <li class="work__item">
               <div class="work__image">
-                <img src="./images/box3-min.jpg" width="370" alt="Палитра на планшете" />
+                <img
+                  srcset="./images/work/work3_pc@1x.jpg 1x, ./images/work/work3_pc@2x.jpg 2x"
+                  src="./images/work/work3_pc@1x.jpg"
+                  width="370"
+                  alt="Палитра на планшете"
+                />
                 <div class="work__overlay">
                   <p class="work__text">Дизайнерские решения</p>
                 </div>
@@ -164,7 +236,15 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team-card">
-              <img src="./images/d-min.jpg" width="270" alt="Игорь Демьяненко" />
+              <img
+                srcset="
+                  ./images/team/imgdemyanenko_pc@1x.jpg 1x,
+                  ./images/team/imgdemyanenko_pc@2x.jpg 2x
+                "
+                src="./images/team/imgdemyanenko_pc@1x.jpg"
+                width="270"
+                alt="Игорь Демьяненко"
+              />
               <div class="team-card__discription">
                 <h3 class="team-card__title">Игорь Демьяненко</h3>
                 <p class="team-card__position" lang="en">Product Designer</p>
@@ -202,7 +282,12 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/r-min.jpg" width="270" alt="Ольга Репина" />
+              <img
+                srcset="./images/team/imgrepina_pc@1x.jpg 1x, ./images/team/imgrepina_pc@2x.jpg 2x"
+                src="./images/team/imgrepina_pc@1x.jpg"
+                width="270"
+                alt="Ольга Репина"
+              />
               <div class="team-card__discription">
                 <h3 class="team-card__title">Ольга Репина</h3>
                 <p class="team-card__position" lang="en">Frontend Developer</p>
@@ -239,7 +324,15 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/t-min.jpg" width="270" alt="Николай Тарасов" />
+              <img
+                srcset="
+                  ./images/team/imgtarasov_pc@1x.jpg 1x,
+                  ./images/team/imgtarasov_pc@2x.jpg 2x
+                "
+                src="./images/team/imgtarasov_pc@1x.jpg"
+                width="270"
+                alt="Николай Тарасов"
+              />
               <div class="team-card__discription">
                 <h3 class="team-card__title">Николай Тарасов</h3>
                 <p class="team-card__position" lang="en">Marketing</p>
@@ -276,7 +369,15 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/e-min.jpg" width="270" alt="Михаил Ермаков" />
+              <img
+                srcset="
+                  ./images/team/imgermakov_pc@1x.jpg 1x,
+                  ./images/team/imgermakov_pc@2x.jpg 2x
+                "
+                src="./images/team/imgermakov_pc@1x.jpg"
+                width="270"
+                alt="Михаил Ермаков"
+              />
               <div class="team-card__discription">
                 <h3 class="team-card__title">Михаил Ермаков</h3>
                 <p class="team-card__position" lang="en">UI Designer</p>
