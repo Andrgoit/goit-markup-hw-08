@@ -7,6 +7,11 @@
     background-color: #ffffff;
     border: none;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -29,6 +34,9 @@
   width: 100vw;
   height: 100vh;
   background-color: #fff;
+
+  transform: translatey(0%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility;
 
   &__container {
     display: flex;
@@ -77,6 +85,10 @@
   &--current {
     color: var(--accent-color);
   }
+}
+
+.mob-menu.is-hidden {
+  transform: translatey(100%);
 }
 
 .mob-menu-contact {
@@ -130,7 +142,4 @@
 
     color: #2196f3;
   }
-}
-
-.mob-menu-contact__bottom {
 }

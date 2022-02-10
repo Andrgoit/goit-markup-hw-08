@@ -1,7 +1,7 @@
 @import './utils/variables';
 @import './utils/reset';
 @import './utils/general-settings';
-@import './components/page-header';
+@import './components/header';
 @import './components/logo';
 @import './components/nav';
 @import './components/contact';
@@ -15,9 +15,7 @@
 @import './components/footer-join';
 @import './components/footer-subscribe';
 @import './components/bonus';
-@import './components/portfolio-main';
-@import './components/portfolio-filter';
-@import './components/portfolio-projects';
+@import './components/portfolio';
 @import './components/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
