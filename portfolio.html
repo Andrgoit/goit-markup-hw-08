@@ -26,11 +26,11 @@
     <!-- page header -->
     <header class="header">
       <div class="container header-container">
-        <!--Logo-->
+        <!------------------------------------------------Logo-->
         <a class="logo no-link" href="./index.html"
           ><span class="logo__first-part">Web</span>Studio</a
         >
-        <!--navigation-->
+        <!--------------------------------------------navigation-->
         <nav>
           <ul class="site-nav list">
             <li class="site-nav__item">
@@ -42,7 +42,7 @@
             <li class="site-nav__item"><a class="site-nav__link no-link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <!--contact-->
+        <!----------------------------------------------------contact-->
         <div class="header-contact">
           <ul class="header-contact__list list">
             <li class="header-contact__item">
@@ -55,7 +55,7 @@
             </li>
             <li class="header-contact__item">
               <a class="header-contact__link no-link" href="tel:+380961111111">
-                <svg class="header-contact__icon" width="16" height="12">
+                <svg class="header-contact__icon" width="16px" height="12px">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38096 111 11 11</a
@@ -63,10 +63,69 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="header__mob-menu-btn-open" data-menu-open>
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ----------------------------------------------mob-menu -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu__container">
+          <button type="button" class="mob-menu__btn-close" data-menu-close>
+            <svg width="40px" height="40px">
+              <use href="./images/icons.svg#icon-close-mobmenu"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-top">
+            <ul class="mob-menu_list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link no-link" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link mob-menu--current no-link" href="#">Портфолио</a>
+              </li>
+              <li class="mob-menu__item"><a class="mob-menu__link no-link" href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-menu-contact">
+              <ul class="mob-menu-contact__list list">
+                <li class="mob-menu-contact__item">
+                  <a class="mob-menu-contact__tel no-link" href="tel:+380961111111"
+                    >+38096 111 11 11</a
+                  >
+                </li>
+                <li class="mob-menu-contact__item">
+                  <a class="mob-menu-contact__mail no-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu-social">
+              <ul class="mob-menu-social__list list">
+                <li class="mob-menu-social__item">
+                  <a href="" class="mob-menu-social__link no-link">Instagram</a>
+                </li>
+                <li class="mob-menu-social__item">
+                  <a href="" class="mob-menu-social__link no-link">Twitter</a>
+                </li>
+                <li class="mob-menu-social__item">
+                  <a href="" class="mob-menu-social__link no-link">Facebook</a>
+                </li>
+                <li class="mob-menu-social__item">
+                  <a href="" class="mob-menu-social__link no-link">Linkedin</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <section class="portfolio-page">
+      <section class="portfolio-page section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <!-- Filter button -->
@@ -440,5 +499,6 @@
         </p>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
