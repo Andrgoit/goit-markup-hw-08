@@ -58,7 +58,7 @@ body {
   margin: -1px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1316,13 +1316,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotatex(0deg);
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   visibility: visible;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .modal__btn-close {
@@ -1363,8 +1369,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    min-height: 581px;
   }
   .modal__title {
     line-height: 1.15;
@@ -1475,8 +1481,10 @@ body {
 }
 
 .agree {
+  max-width: 370px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
@@ -1487,6 +1495,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .agree {
+    flex-wrap: nowrap;
+    align-items: center;
     font-size: 14px;
     line-height: 1.71;
   }

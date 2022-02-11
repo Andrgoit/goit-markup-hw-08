@@ -113,8 +113,10 @@
 }
 
 .agree {
+  max-width: 370px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   line-height: (14 / 12);
@@ -123,6 +125,8 @@
   cursor: pointer;
 
   @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-items: center;
     font-size: 14px;
     line-height: 1.71;
   }
