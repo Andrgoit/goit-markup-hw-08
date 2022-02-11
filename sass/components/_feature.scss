@@ -17,6 +17,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-text-title);
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__text {
